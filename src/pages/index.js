@@ -10,6 +10,7 @@ import pic04 from '../assets/images/pic04.jpg'
 
 import gitChatDM from '../assets/images/gitChat-DMCrop.jpg'
 import HQLanding from '../assets/images/HQLanding.jpg'
+import linkedInPic from '../assets/images/linkedInPic.jpg'
 
 class Homepage extends React.Component {
   render() {
@@ -22,24 +23,25 @@ class Homepage extends React.Component {
         <section id="one" className="main style1">
           <div className="grid-wrapper">
             <div className="col-6">
-              <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing
-                  <br />
-                  amet dolor consequat
-                </h2>
-              </header>
-              <p>
-                Adipiscing a commodo ante nunc accumsan et interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis sed volutpat
-                aclacus nascetur ac non. Lorem curae et ante amet sapien sed
-                tempus adipiscing id accumsan.
-              </p>
+              <span className="image fit-me">
+                <img
+                  style={{ borderRadius: '50%', height: '50%' }}
+                  src={linkedInPic}
+                  alt=""
+                />
+              </span>
             </div>
             <div className="col-6">
-              <span className="image fit">
-                <img src={pic01} alt="" />
-              </span>
+              <header className="major">
+                <h2>About Me</h2>
+              </header>
+              <p>
+                I'm a full-stack developer and full-time nerd. Development has
+                quickly become a passion for me, and I'm looking forward to
+                continuing to learn and challenge myself. If I'm not coding, I'm
+                probably playing video games, spending time with my dogs, or
+                beadweaving while listening to a podcast.
+              </p>
             </div>
           </div>
         </section>
@@ -48,7 +50,7 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-6">
               <ul className="major-icons">
-                <li>
+                {/* <li>
                   <span className="icon style1 major fa-code" />
                 </li>
                 <li>
@@ -65,38 +67,98 @@ class Homepage extends React.Component {
                 </li>
                 <li>
                   <span className="icon style6 major fa-gamepad" />
+                </li> */}
+
+                <header
+                  style={{ width: '100%', textAlign: 'center' }}
+                  className="major"
+                >
+                  <h2>Skills</h2>
+                </header>
+
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://image.winudf.com/v2/image/bGVhcm4ucmVhY3Rqcy50dXRvcmlhbF9pY29uXzE1MDM0Mzc3MjFfMDI1/icon.png?w=170&fakeurl=1&type=.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://png.pngtree.com/svg/20170719/javascript_633988.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://www.flowgear.net/wp-content/uploads/2014/08/connector-icon-postgresql.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://img.icons8.com/color/1600/nodejs.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://img7.apk.tools/150/7/b/5/me.tuple.sassreference.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png"
+                      alt=""
+                    />
+                  </div>
                 </li>
               </ul>
             </div>
             <div className="col-6">
               <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing
-                  <br />
-                  amet dolor consequat
-                </h2>
+                <h2>Technologies</h2>
+              </header>
+              <p>
+                I have a passion for learning new technology. So far, I have
+                experience with:
+              </p>
+              <h4>
+                JavaScript ES6 | React | Redux | Node.js | PostgreSQL | Firebase
+                | Express | npm | Git | SCSS | Moment.js
+              </h4>
+              {/* <header className="major">
+                <h2>About Me</h2>
               </header>
               <p>
                 Adipiscing a commodo ante nunc accumsan interdum mi ante
                 adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
-              </p>
-              <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
-              </p>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
+              </p> */}
             </div>
           </div>
         </section>

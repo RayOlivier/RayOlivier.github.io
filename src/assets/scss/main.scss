@@ -551,7 +551,17 @@ input[type='radio'] {
   &.fit {
     display: block;
     margin: 0 0 _size(element-margin) 0;
-    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.fit-me {
+    display: block;
+    margin: 0 0 _size(element-margin) 0;
+    width: 50%;
+    margin: 1em auto;
 
     img {
       width: 100%;
@@ -619,11 +629,15 @@ ul {
   &.major-icons {
     list-style: none;
     padding-left: 0;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 
     li {
       display: inline-block;
       padding: 2.5em;
       text-align: center;
+      width: 50%;
 
       .icon {
         @include vendor('transform', 'rotate(45deg)');
@@ -635,11 +649,18 @@ ul {
         margin: 0;
         text-align: center;
         width: 8em;
+        padding: 1em;
+        background: rgba(221, 221, 221, 0.3);
 
         &:before {
           @include vendor('transform', 'rotate(-45deg)');
           display: inline-block;
           line-height: inherit;
+        }
+
+        .img {
+          @include vendor('transform', 'rotate(-45deg)');
+          // border-radius: 50%;
         }
       }
     }
@@ -1098,7 +1119,7 @@ button,
 /* Footer */
 
 #footer {
-  @include padding(6em, 0, (0, 0, _size(element-margin), 0));
+  @include padding(3em, 0, (0, 0, _size(element-margin), 0));
   @include dark(#4686a0);
   background-attachment: fixed, fixed, fixed;
   // background-image: url('../images/overlay2.png'), url('../images/overlay4.svg'),
