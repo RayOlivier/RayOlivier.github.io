@@ -8,6 +8,9 @@ import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 
+import gitChatDM from '../assets/images/gitChat-DMCrop.jpg'
+import HQLanding from '../assets/images/HQLanding.jpg'
+
 class Homepage extends React.Component {
   render() {
     const siteTitle = 'Ray Olivier'
@@ -102,48 +105,72 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
-                <h2>Adipiscing amet consequat</h2>
+                <h2>Projects</h2>
               </header>
-              <p>
-                Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.
-              </p>
+              <p>My work so far.</p>
             </div>
 
-            <div className="col-4">
+            <div className="col-6">
               <span className="image fit">
-                <img src={pic02} alt="" />
+                <img src={gitChatDM} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>gitChat</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                An instant messaging app inspired by Discord and Slack <br />{' '}
+                Team Developed Web App <br />
+                Technologies implemented: React | Firebase | SCSS | moment.js |
+                React-Router | Markdown
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
-                    More
+                  <a
+                    target="_blank"
+                    href="https://github.com/gitchat-app/gitchat"
+                    className="button"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://gitchat-app.firebaseapp.com "
+                    className="button"
+                  >
+                    Live Site
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <span className="image fit">
-                <img src={pic03} alt="" />
+                <img src={HQLanding} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>HealthQueery</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                A curation, search, and review site for LGBTQ+ inclusive
+                healthcare <br />A Personally Developed Project <br />
+                Technologies implemented: React | Redux | Node | Express |
+                PostgreSQL | Google Maps API | Massive | SCSS
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
-                    More
+                  <a
+                    target="_blank"
+                    href="https://github.com/RayOlivier/healthQueery "
+                    className="button"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="#" className="button">
+                    X
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="col-4">
+            {/* <div className="col-4">
               <span className="image fit">
                 <img src={pic04} alt="" />
               </span>
@@ -159,16 +186,16 @@ class Homepage extends React.Component {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </section>
 
-        <section id="four" className="main style2 special">
+        {/* <section id="four" className="main style2 special">
           <div className="container">
             <header className="major">
-              <h2>Ipsum feugiat consequat?</h2>
+              <h2>Contact</h2>
             </header>
-            <p>Sed lacus nascetur ac ante amet sapien.</p>
+            <p>Email: rayolivier@outlook.com</p>
             <ul className="actions uniform">
               <li>
                 <a href="#" className="button special">
@@ -181,8 +208,47 @@ class Homepage extends React.Component {
                 </a>
               </li>
             </ul>
+            <ul className="icons">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rayolivier/"
+                  className="icon alt fa-linkedin"
+                  target="_blank"
+                >
+                  <span className="label">LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="icon alt fa-facebook">
+                  <span className="label">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="icon alt fa-instagram">
+                  <span className="label">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RayOlivier/"
+                  className="icon alt fas fa-github"
+                  target="_blank"
+                >
+                  <span className="label">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:rayolivier@outlook.com"
+                  className="icon alt fa-envelope"
+                  target="_blank"
+                >
+                  <span className="label">Email: rayolivier@outlook.com</span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
+        </section> */}
       </Layout>
     )
   }
