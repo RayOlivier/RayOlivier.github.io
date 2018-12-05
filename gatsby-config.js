@@ -21,5 +21,5 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
-  pathPrefix: '/RayOlivier.github.io',
+  pathPrefix: '/portfolio',
 }
