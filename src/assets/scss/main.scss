@@ -629,15 +629,15 @@ ul {
   &.major-icons {
     list-style: none;
     padding-left: 0;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     li {
       display: inline-block;
       padding: 2.5em;
       text-align: center;
-      width: 50%;
+      // width: 25%;
 
       .icon {
         @include vendor('transform', 'rotate(45deg)');

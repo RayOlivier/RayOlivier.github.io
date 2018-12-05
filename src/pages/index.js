@@ -48,7 +48,7 @@ class Homepage extends React.Component {
 
         <section id="two" className="main style2">
           <div className="grid-wrapper">
-            <div className="col-6">
+            <div className="col-12">
               <ul className="major-icons">
                 {/* <li>
                   <span className="icon style1 major fa-code" />
@@ -136,9 +136,29 @@ class Homepage extends React.Component {
                     />
                   </div>
                 </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      // style={{ height: '150px' }}
+                      src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png"
+                      alt=""
+                    />
+                  </div>
+                </li>
               </ul>
             </div>
-            <div className="col-6">
+            {/* <div className="col-6">
               <header className="major">
                 <h2>Technologies</h2>
               </header>
@@ -150,7 +170,7 @@ class Homepage extends React.Component {
                 JavaScript ES6 | React | Redux | Node.js | PostgreSQL | Firebase
                 | Express | npm | Git | SCSS | Moment.js
               </h4>
-              {/* <header className="major">
+              <header className="major">
                 <h2>About Me</h2>
               </header>
               <p>
@@ -158,8 +178,8 @@ class Homepage extends React.Component {
                 adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
-              </p> */}
-            </div>
+              </p>
+            </div> */}
           </div>
         </section>
 
