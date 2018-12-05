@@ -226,8 +226,12 @@ class Homepage extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="#" className="button">
-                    X
+                  <a
+                    target="_blank"
+                    href="http://healthqueery.com/"
+                    className="button"
+                  >
+                    Live Site
                   </a>
                 </li>
               </ul>
