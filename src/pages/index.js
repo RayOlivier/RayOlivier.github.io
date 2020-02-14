@@ -8,6 +8,20 @@ import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 
+import jsIcon from '../assets/images/js_icon.png'
+import angularIcon from '../assets/images/angularIcon.png'
+import rxjsIcon from '../assets/images/rxjsIcon.png'
+import reactIcon from '../assets/images/reactIcon.png'
+import htmlIcon from '../assets/images/htmlIcon.png'
+import cssIcon from '../assets/images/cssIcon.png'
+import gitIcon from '../assets/images/gitIcon.png'
+import sassIcon from '../assets/images/sassIcon.png'
+import sqlIcon from '../assets/images/sqlIcon.png'
+import nodeIcon from '../assets/images/nodeIcon.png'
+import reduxIcon from '../assets/images/reduxIcon.png'
+import firebaseIcon from '../assets/images/firebaseIcon.png'
+
+
 import gitChatDM from '../assets/images/gitChat-DMCrop.jpg'
 import HQLanding from '../assets/images/HQLanding.jpg'
 import linkedInPic from '../assets/images/linkedInPic.jpg'
@@ -36,11 +50,9 @@ class Homepage extends React.Component {
                 <h2>About Me</h2>
               </header>
               <p>
-                I'm a full-stack developer and full-time nerd. Development has
-                quickly become a passion for me, and I'm looking forward to
-                continuing to learn and challenge myself. If I'm not coding, I'm
-                probably playing video games, spending time with my dogs, or
-                beadweaving while listening to a podcast.
+                I'm a full-stack developer with professional experience building frontend solutions at a large scale. I've been working as a UI developer at projekt202 since January 2019.
+
+                Outside of code, I'm just a dog dad with a passion for video games and podcasts.
               </p>
             </div>
           </div>
@@ -74,14 +86,14 @@ class Homepage extends React.Component {
                   className="major"
                 >
                   <h2>Skills</h2>
+                  <p>JavaScript, Angular, React, SCSS, HTML, RxJS, ThreeJS, SQL, Node, Express, Firebase, and more.</p>
                 </header>
 
                 <li>
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://image.winudf.com/v2/image/bGVhcm4ucmVhY3Rqcy50dXRvcmlhbF9pY29uXzE1MDM0Mzc3MjFfMDI1/icon.png?w=170&fakeurl=1&type=.png"
+                      src={jsIcon}
                       alt=""
                     />
                   </div>
@@ -90,8 +102,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://png.pngtree.com/svg/20170719/javascript_633988.png"
+                      src={reactIcon}
                       alt=""
                     />
                   </div>
@@ -100,8 +111,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://www.flowgear.net/wp-content/uploads/2014/08/connector-icon-postgresql.png"
+                      src={angularIcon}
                       alt=""
                     />
                   </div>
@@ -110,8 +120,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://img.icons8.com/color/1600/nodejs.png"
+                      src={gitIcon}
                       alt=""
                     />
                   </div>
@@ -120,8 +129,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://img7.apk.tools/150/7/b/5/me.tuple.sassreference.png"
+                      src={rxjsIcon}
                       alt=""
                     />
                   </div>
@@ -130,8 +138,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png"
+                      src={htmlIcon}
                       alt=""
                     />
                   </div>
@@ -140,8 +147,7 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png"
+                      src={cssIcon}
                       alt=""
                     />
                   </div>
@@ -150,8 +156,43 @@ class Homepage extends React.Component {
                   <div className="icon image fit">
                     <img
                       className="img"
-                      // style={{ height: '150px' }}
-                      src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png"
+                      src={reduxIcon}
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      src={sassIcon}
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      src={sqlIcon}
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      src={nodeIcon}
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="icon image fit">
+                    <img
+                      className="img"
+                      src={firebaseIcon}
                       alt=""
                     />
                   </div>
@@ -187,7 +228,7 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
-                <h2>Projects</h2>
+                <h2>DevMountain Projects</h2>
               </header>
               <p>My work so far.</p>
             </div>
@@ -245,7 +286,7 @@ class Homepage extends React.Component {
                     Github
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     target="_blank"
                     href="http://healthqueery.com/"
@@ -253,7 +294,7 @@ class Homepage extends React.Component {
                   >
                     Live Site
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* <div className="col-4">
